@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BrandingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brandingSetProperty>
+        <propertyName>BRAND_COLOR</propertyName>
+        <propertyValue>#FB6ED0</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>HEADER_BACKGROUND_COLOR</propertyName>
+        <propertyValue>#FFFFFF</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>BRAND_IMAGE</propertyName>
+        <propertyValue>/file-asset/Captura_de_pantalla_20250118_210313?v=1</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>GROUPS_BANNER_IMAGE</propertyName>
+        <propertyValue></propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>GROUP_IMAGE</propertyName>
+        <propertyValue></propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>PROFILE_BANNER_IMAGE</propertyName>
+        <propertyValue></propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>USER_IMAGE</propertyName>
+        <propertyValue></propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>OVERRIDE_LOADING_PAGE</propertyName>
+        <propertyValue>false</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>ON_SURFACE_COLOR_3</propertyName>
+        <propertyValue>#430d34</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>ON_SURFACE_COLOR_3_DARK_MODE</propertyName>
+        <propertyValue>#f9deee</propertyValue>
+    </brandingSetProperty>
+    <masterLabel>Plants For All</masterLabel>
+</BrandingSet>
