@@ -1,18 +1,30 @@
-# Salesforce DX Project: Next Steps
+# Sample App to Manage your garden's plants!
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Installing using a Scratch Org
 
-## How Do You Plan to Deploy Your Changes?
+    1. Set up your enviroment. Follow the steps in the Quick Start: Lightning Web Components Trailhead project. The steps include:
+        · Enable Dev Hub in your Trailhead Playground.
+        · Install Salesforce CLI
+        · Install Visual Studio Code
+        · Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+    2. If you haven't already done so, authorize your hub org and provide it with an alias (myhuborg in the command below):
+        · sfdx force:auth:web:login -d -a myhuborg
 
-## Configure Your Salesforce DX Project
+    3. Clone this repository:
+        · git clone https://github.com/patriciaFiallos/plants26may26 cd plants
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+    4. Create a scratch org and provide it with an alias (plants in the command bellow):
+        · sfdx force:org:create -s -f config/project-scratch-def.json -a plants
 
-## Read All About It
+    5. Push the app to your scratch org:
+        · sfdx force:source:push
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+    6. Assign the Plants_App permission set to the default user:
+        · sfdx force:user:permset:assign -n Plants_App
+
+    7. Import sample data:
+        · sfdx force:data:tree:import -p ./data/data-plan.json
+
+    8. Open the Scratch org:
+        · sfdx force:org:open
